@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengurutan Produk Terlaris DigiMap Official Shop</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pengurutan Produk Terlaris per Bulan di DigiMap Official Shop</h1>
+        <p class="sub-heading">Menggunakan Algoritma Insertion Sort dan Quick Sort untuk Pengurutan</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input-form">
+                <label for="jumlahProduk">Masukkan Jumlah Produk: </label>
+                <input type="number" id="jumlahProduk" min="1" value="10">
+                <button onclick="generateAndCompare()">Hasilkan & Bandingkan</button>
+            </div>
+
+            <div class="buttons">
+                <button onclick="sortProduk('insertion')">Urutkan dengan Insertion Sort</button>
+                <button onclick="sortProduk('quick')">Urutkan dengan Quick Sort</button>
+            </div>
+
+            <div>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nama Produk</th>
+                            <th>Penjualan per bulan</th>
+                        </tr>
+                    </thead>
+                    <tbody id="produkBody"></tbody>
+                </table>
+            </div>
+
+            <div id="executionTimes" style="display:none;">
+                <h3>Hasil Eksekusi:</h3>
+                <p id="insertionSortTime">Waktu Insertion Sort: 0 ms</p>
+                <p id="quickSortTime">Waktu Quick Sort: 0 ms</p>
+            </div>
+
+            <div>
+                <canvas id="efficiencyChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

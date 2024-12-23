@@ -1,0 +1,156 @@
+/* Mengatur margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font untuk body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c; /* Warna latar belakang */
+    color: #e4e4e4; /* Warna teks */
+    padding: 0;
+    margin: 0;
+}
+
+/* Mengatur header halaman */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks di header */
+    text-align: center;
+    padding: 50px;
+}
+
+/* Mengatur tampilan judul pada header */
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Mengatur tampilan subheading di header */
+header .sub-heading {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #95a5a6; /* Warna teks abu-abu pada subheading */
+}
+
+/* Mengatur tampilan untuk bagian utama konten */
+main {
+    padding: 40px 0;
+    background-color: #2c2c2c; /* Warna latar belakang konten utama */
+}
+
+/* Mengatur container utama */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Mengatur tampilan input form */
+.input-form {
+    background-color: #333; /* Warna latar belakang form */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mengatur tampilan input pada form */
+.input-form input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    width: 250px;
+    background-color: #444; /* Warna latar belakang input */
+    color: white;
+}
+
+/* Mengatur tampilan tombol pada form */
+.input-form button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #1abc9c; /* Warna latar belakang tombol */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+}
+
+/* Efek saat tombol dihover */
+.input-form button:hover {
+    background-color: #16a085; /* Warna latar belakang tombol saat dihover */
+}
+
+/* Mengatur tampilan tabel */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan jarak antar sel */
+    margin-bottom: 40px;
+}
+
+/* Mengatur tampilan tabel, header dan sel */
+table, th, td {
+    border: 1px solid #555;
+}
+
+/* Mengatur tampilan header tabel */
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Mengatur tampilan baris header tabel */
+th {
+    background-color: #333;
+    color: #e4e4e4;
+}
+
+/* Mengatur tampilan sel pada baris tabel */
+td {
+    background-color: #2c2c2c;
+    color: #e4e4e4;
+}
+
+/* Efek saat mouse hover pada baris tabel */
+tr:hover td {
+    background-color: #444; /* Mengubah warna sel saat mouse berada di atasnya */
+}
+
+/* Mengatur tampilan chart (grafik) */
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Mengatur tampilan footer */
+footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mengatur tampilan paragraf pada footer */
+footer p {
+    margin: 0;
+}
+
+/* Mengatur tampilan waktu eksekusi algoritma */
+#executionTimes {
+    margin-top: 20px;
+    background-color: #444; /* Warna latar belakang untuk waktu eksekusi */
+    padding: 15px;
+    border-radius: 8px;
+    color: #e4e4e4;
+}
